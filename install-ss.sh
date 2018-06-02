@@ -31,13 +31,15 @@ echo "$jsonText" | cat > ss-config.json
 
 echo "Writing config files.... done."
 
-echo "installing shadowsocks.... (1/4)"
+echo "installing shadowsocks.... (1/5)"
 apt-get update
-echo "installing shadowsocks... (2/4)"
+echo "installing shadowsocks... (2/5)"
 apt-get install -y python-pip
-echo "installing shadowsocks... (3/4)"
+echo "installing shadowsocks... (3/5)"
 pip install --upgrade pip
-echo "installing shadowsocks... (4/4)"
+echo "installing shadowsocks... (4/5)"
+pip install distribute
+echo "installing shadowsocks... (4/5)"
 pip install shadowsocks
 
 echo "installing shadowsocks... done"
